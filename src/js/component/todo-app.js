@@ -1,6 +1,7 @@
 import React from "react";
 
 import TodoForm from "./todoform.js";
+import Todo from "./todo.js";
 
 export default class TodoList extends React.Component {
 	state = {
@@ -18,7 +19,7 @@ export default class TodoList extends React.Component {
 			<div>
 				<TodoForm onSubmit={this.addTodo} />
 				{this.state.todos.map(todo => (
-					<div key={todo.id}>{todo.text}</div>
+					<Todo key={todo.id} text={todo.text} />
 				))}
 			</div>
 		);
