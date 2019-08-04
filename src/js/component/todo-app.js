@@ -1,5 +1,4 @@
 import React from "react";
-
 import TodoForm from "./todoform.js";
 import Todo from "./todo.js";
 
@@ -33,7 +32,7 @@ export default class TodoList extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="to-do">
 				<TodoForm onSubmit={this.addTodo} />
 				{this.state.todos.map(todo => (
 					<Todo

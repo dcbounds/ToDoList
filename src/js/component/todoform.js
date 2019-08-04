@@ -1,5 +1,6 @@
 import React from "react";
 import shortid from "shortid";
+import PropTypes from "prop-types";
 
 export default class TodoForm extends React.Component {
 	state = {
@@ -30,17 +31,26 @@ export default class TodoForm extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<form onSubmit={this.handleSubmit}>
+			<div className="new-todo">
+				<form className="todo-textbox" onSubmit={this.handleSubmit}>
 					<input
+						className="textinput"
 						name="text"
 						value={this.state.text}
 						onChange={this.handleChange}
-						placeholder="git it done..."
+						placeholder="  git it done..."
 					/>
-					<button onClick={this.handleSubmit}>New Todo!</button>
+					<button
+						type="button"
+						className="btn btn-info my-auto"
+						onClick={this.handleSubmit}>
+						New Todo!
+					</button>
 				</form>
 			</div>
 		);
 	}
 }
+TodoForm.propTypes = {
+	onSubmit: PropTypes.string
+};
