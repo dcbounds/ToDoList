@@ -32,7 +32,7 @@ export default class TodoForm extends React.Component {
 	render() {
 		return (
 			<div className="new-todo">
-				<form className="todo-textbox" onSubmit={this.handleSubmit}>
+				<form className="" onSubmit={this.handleSubmit}>
 					<input
 						className="textinput"
 						name="text"

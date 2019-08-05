@@ -6,6 +6,7 @@ export default class props extends React.Component {
 	render() {
 		return (
 			<div
+				className="addedtodo"
 				style={{
 					textDecoration: this.props.todo.complete
 						? "line-through"
