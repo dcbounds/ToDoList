@@ -44,7 +44,7 @@ export default class TodoForm extends React.Component {
 						type="button"
 						className="btn btn-info my-auto"
 						onClick={this.handleSubmit}>
-						New Todo!
+						NEW TODO
 					</button>
 				</form>
 			</div>
