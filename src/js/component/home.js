@@ -9,9 +9,12 @@ import Todo from "./todo.js";
 export default class Home extends React.Component {
 	render() {
 		return (
-			<div className="card">
-				<div>
-					<Todolist />
+			<div>
+				<div className="card">
+					<h1 className="title">To-Do List</h1>
+					<div>
+						<Todolist />
+					</div>
 				</div>
 			</div>
 		);

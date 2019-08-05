@@ -7,6 +7,12 @@ body {
   height: 100%;
   color: rgb(140, 140, 140);
   text-transform: uppercase;
+
+}
+.title{
+    margin-bottom: 1rem;
+   margin: auto;
+   color: rgb(150, 230, 60);
 }
 
 .page {
@@ -66,4 +72,5 @@ body {
 .addedtodo {
     margin: 1rem;
     color:  rgb(150, 230, 60);
+    text-transform: uppercase;
 }
